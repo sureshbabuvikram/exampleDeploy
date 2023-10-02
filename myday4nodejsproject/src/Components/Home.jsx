@@ -8,7 +8,7 @@ const Home = () => {
     },[])
 
     const fetchData=async()=>{
-        await axios.get("https://examplebackend-sn33.onrender.com//api/emp")
+        await axios.get("https://examplebackend-sn33.onrender.com/api/emp")
         .then(res=>setEmpData(res.data))
         .catch((err)=>{
             console.log(err);
